@@ -16,7 +16,7 @@
     <title>DeumGroup - Real-Estate, Engineering, Ict</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <link rel="icon" href="/assets/images/deum-engineering.png">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
@@ -52,13 +52,13 @@
 
     <div id="page-wrapper" class="bg-white">
         <!--============== Header Section Start ==============-->
-        <header id="header" class="bg-secondary fixed-header-bg-secondary py-3 w-100">
+        <header id="header" class="nav-on-banner transparent-header-modern fixed-header-bg-secondary py-2">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="main-nav hover-primary-nav">
                             <nav class="navbar navbar-expand-lg navbar-light white-nav hover-primary-nav p-0">
-                                <a class="navbar-brand position-relative p-0" href="#"><img class="nav-logo" src="/assets/images/logo/logo-white.png" alt=""></a>
+                                <a class="navbar-brand position-relative p-0" href="#"><img class="nav-logo" src="/assets/images/logo/deum-realestate.png" alt=""></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto">
@@ -140,7 +140,7 @@
                                 <div class="col-lg-4">
                                     <div class="footer-widget">
                                         <div class="footer-logo mb-4">
-                                            <a href="#"><img class="logo-bottom" src="/assets/images/logo/logo.png" alt="image"></a>
+                                            <a href="#"><img class="logo-bottom" src="/assets/images/logo/deum-realestate.png" alt="image"></a>
                                         </div>
                                         <p class="pb-20">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis
                                             dignissim nam.

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row row-cols-md-2 row-cols-1 g-3">
                 <div class="col">
-                    <h3 class="page-name text-secondary m-0">Service Details</h3>
+                    <h3 class="page-name text-secondary m-0">DEUM ENGINEERING</h3>
                 </div>
                 <div class="col">
                     <nav class="float-start float-md-end">
