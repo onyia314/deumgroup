@@ -34,12 +34,15 @@
                 <div class="row about-company">
                     <div class="col-lg-7">
                         <div class="about-content">
-                            <p>A tristique tempor quisque. Pulvinar. Sociosqu. Nostra tempor lacus iaculis enim consectetuer urna. Vehicula risus aliquet elementum proin senectus class vulputate dignissim. Potenti integer facilisis augue ridiculus. Augue
-                                adipiscing, viverra cras et fusce laoreet fringilla amet varius imperdiet bibendum arcu, luctus feugiat etiam, tincidunt vivamus nullam, ridiculus, vehicula vitae magnis non etiam lacus lacinia magnis lacus elementum vel.
-                                Laoreet mus nulla. Aliquam bibendum mi interdum in ridiculus ante.</p>
-                            <p>Dui consectetuer, ornare proin sed nullam nunc aenean dolor bibendum proin venenatis semper faucibus metus dolor lobortis mattis, rhoncus hymenaeos. Placerat vulputate porttitor quisque accumsan porta maecenas scelerisque montes
-                                dignissim mollis.</p>
-                            <img src="/assets/images/about/02.png" alt=""> </div>
+                            <p>Deum Group of Companies is an Establishement Comprising of three major companies: Deum Engineering Ltd, Deum Real Estate LTD, Deum Communications and Technology Ltd.
+                                We are interested in Delivering Services to our Clients taste. These services ranges from Engineering to Real Estate and ICT.
+                            </p>
+                            <p>
+                                Our reliability and consecutive awesome performance gets us a lot of repeat jobs as we treat all Clients equally.
+                                Our integrity keeps us in Business.
+                                We are Deum
+                            </p>
+                        </div>
                         <div class="fact-counter mt-5 md-mb-40">
                             <div class="row row-cols-md-3 row-cols-1 g-4">
                                 <div class="col">
@@ -238,7 +241,7 @@
         </div>
         <!--============== Achievement Section End ==============-->
 
-        <!--============== Our Team Section Start ==============-->
+        {{-- <!--============== Our Team Section Start ==============-->
         <div class="full-row bg-white">
             <div class="container">
                 <div class="row">
@@ -279,7 +282,7 @@
             </div>
         </div>
         <!--============== Our Team Section End ==============-->
-
+ --}}
         <!--============== Partner Section Start ==============-->
         <div class="full-row bg-white pt-0">
             <div class="container">

@@ -45,17 +45,17 @@
                                 <li class="d-flex mb-4"> <i class="fas fa-map-marker-alt text-primary me-2 font-13 mt-2"></i>
                                     <div class="contact-address">
                                         <h5 class="text-secondary">Address</h5>
-                                        <span>Collins Street West, Victoria 8007, Australia</span> </div>
+                                        <span>19 Jideofor Street, Thinkers Corner, Enugu.</span> </div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-primary me-2 font-13 mt-2"></i>
                                     <div class="contact-address">
                                         <h5 class="text-secondary">Call Us</h5>
-                                        <span class="d-table">012 34 567 809 (or)</span> <span>012 34 567 809 </span> </div>
+                                        <span class="d-table">08076165672</span> </div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-envelope text-primary me-2 font-13 mt-2"></i>
                                     <div class="contact-address">
                                         <h5 class="text-secondary">Email Adderss</h5>
-                                        <span>helpline@homex.com</span> </div>
+                                        <span>deumgroup@gmail.com</span> </div>
                                 </li>
                             </ul>
                         </div>
@@ -66,9 +66,8 @@
                             <div class="media-widget text-secondary hover-text-primary">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fas fa-rss"></i></a>
                             </div>
                         </div>
                     </div>
@@ -87,15 +86,15 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <form id="contact-form" class="w-100" action="https://unicoderbd.com/theme/html/homex/email.php" method="post">
+                        <form id="contact-form" class="w-100" action="" method="get">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" id="name" name="firstname" class="form-control bg-gray mb-3" placeholder="Your Name*">
+                                    <input type="text" id="name" name="name" class="form-control bg-gray mb-3" placeholder="Your Name*">
                                     <input type="text" id="email" name="email" class="form-control bg-gray mb-3" placeholder="Email Address*">
-                                    <input type="text" id="site-link" name="site-link" class="form-control bg-gray mb-3" placeholder="Website">
                                     <input type="text" id="subject" name="subject" class="form-control bg-gray mb-3" placeholder="Subject">
                                 </div>
                                 <div class="col-lg-6">
+                                    <input type="hidden" name="form-url" id="form-url" value="{{env('APP_URL')}}">
                                     <textarea id="message" name="message" class="form-control bg-gray mb-3" rows="5" placeholder="Type Comments..."></textarea>
                                     <button type="submit" id="send" value="send message" class="btn btn-primary">Send Message</button>
                                 </div>

@@ -23,6 +23,11 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
     <!-- Css Link -->
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-slider.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/all.min.css">
@@ -52,53 +57,52 @@
 
     <div id="page-wrapper" class="bg-white">
         <!--============== Header Section Start ==============-->
-        <header id="header" class="nav-on-banner transparent-header-modern fixed-header-bg-secondary py-2">
+        <header id="header" class="fixed-header-bg-white">
+            
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="main-nav hover-primary-nav">
-                            <nav class="navbar navbar-expand-lg navbar-light white-nav hover-primary-nav p-0">
-                                <a class="navbar-brand position-relative p-0" href="#"><img class="nav-logo" src="/assets/images/logo/deum-realestate.png" alt=""></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav me-auto">
-
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="{{route('index')}}">Home</a> 
-                                        </li>
-
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="{{route('about')}}">About</a> 
-                                        </li>
-
-                                        <li class="nav-item"> <a class="nav-link" href="{{route('posts.index')}}">
-                                            blog</a> 
-                                        </li>
-
-                                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="{{route('services.real-estate')}}">Real Estate</a></li>
-                                                <li><a class="dropdown-item" href="{{route('services.engineering')}}">Engineering</a></li>
-                                                <li><a class="dropdown-item" href="{{route('services.ict')}}">ICT</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item"> 
-                                            <a class="nav-link" href="{{route('faq')}}">faq</a> 
-                                        </li>
-                                        <li class="nav-item"> <a class="nav-link" href="{{route('contact')}}">
-                                            Contact</a> 
-                                        </li>
-
-                                    </ul>
-
-                                    <a class="btn btn-white-border" href="#"><i class="fas fa-phone-alt"></i> 132 - 341 - 92341</a> </div>
-                            </nav>
-                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light secondary-nav hover-primary-nav">
+                            <a class="navbar-brand" href="{{route('index')}}"><img class="nav-logo" src="/assets/images/logo/deum-engineering.png" alt="DEUM"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item"> <a class="nav-link {{Route::is('index') ? 'active' : ''}}" href="{{route('index')}}">Home</a> </li>
+                                    <li class="nav-item"> <a class="nav-link {{Route::is('about') ? 'active' : ''}}" href="{{route('about')}}">About</a> </li>
+                                    <li class="nav-item"> <a class="nav-link {{Route::is('posts.index') ? 'active' : ''}}" href="{{route('blog')}}">Blog</a> </li>
+                                    <li class="nav-item dropdown"> 
+                                        <a class="nav-link dropdown-toggle {{Route::is('services.real-estate') || Route::is('services.engineering') || Route::is('services.ict')  ? 'active' : ''}}" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Services
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="{{route('services.real-estate')}}">Real Estate</a></li>
+                                            <li><a class="dropdown-item" href="{{route('services.engineering')}}">Engineering</a></li>
+                                            <li><a class="dropdown-item" href="{{route('services.ict')}}">ICT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link {{Route::is('properties') ? 'active' : ''}}" href="{{route('properties')}}">Lands</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link {{Route::is('engprojects') ? 'active' : ''}}" href="{{route('engprojects')}}">Engineering Projects</a> 
+                                    </li>
+                                    <li class="nav-item"> 
+                                        <a class="nav-link {{Route::is('faq') ? 'active' : ''}}" href="{{route('faq')}}">faq</a> 
+                                    </li>
+                                    <li class="nav-item"> <a class="nav-link {{Route::is('contact') ? 'active' : ''}}" href="{{route('contact')}}">
+                                        Contact</a> 
+                                    </li>
+                                </ul>
+                
+                                <a class="btn bg-primary text-white text-white d-none d-xl-block" href="tel: 08076165672"><i class="fas fa-phone-alt"></i> 08076165672</a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-        </header>
+    </header>
         <!--============== Header Section End ==============-->
 
         
@@ -118,7 +122,7 @@
                                     <form class="subscribe">
                                         <div class="input-group">
                                             <input type="email" class="form-control" placeholder="Enter your email">
-                                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                                            <button class="btn bg-primary text-white" type="submit">Subscribe</button>
                                         </div>
                                     </form>
                                 </div>
@@ -140,12 +144,12 @@
                                 <div class="col-lg-4">
                                     <div class="footer-widget">
                                         <div class="footer-logo mb-4">
-                                            <a href="#"><img class="logo-bottom" src="/assets/images/logo/deum-realestate.png" alt="image"></a>
+                                            <a href="{{route('index')}}"><img class="logo-bottom" src="/assets/images/logo/deum-engineering.png" alt="image"></a>
                                         </div>
-                                        <p class="pb-20">Risus commodo congue augue phasellus morbi hymenaeos ante tincidunt eu orci dictum bibendum lacus platea primis mi lacinia felis gravida natoque bibendum cubilia montes tristique et arcu blandit risus. Lobortis
-                                            dignissim nam.
+                                        <p class="pb-20">
+                                            Getting a Job done starts from Contacting the right people for the Job. Deum Group has never failed to deliver on a Project. That's why choosing Deum Group for your Engineering Services, Real Estate Development, marketing and ICT is always the Right choice.
+Contact us today and let us worry about getting your job done.
                                         </p>
-                                        <a class="btn btn-primary mt-4" href="#">Register Now</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-8">
@@ -154,12 +158,9 @@
                                             <div class="footer-widget footer-nav">
                                                 <h4 class="widget-title text-secondary double-down-line-left position-relative">Support</h4>
                                                 <ul>
-                                                    <li><a href="#">Forum</a></li>
-                                                    <li><a href="#">Statistics</a></li>
                                                     <li><a href="#">Terms and Condition</a></li>
-                                                    <li><a href="#">Get Support</a></li>
-                                                    <li><a href="#">Freequenly Ask Question</a></li>
-                                                    <li><a href="#">Contact</a></li>
+                                                    <li><a href="{{route('faq')}}">Freequenly Ask Question</a></li>
+                                                    <li><a href="{{route('contact')}}">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -167,12 +168,10 @@
                                             <div class="footer-widget footer-nav">
                                                 <h4 class="widget-title text-secondary double-down-line-left position-relative">Quick Links</h4>
                                                 <ul>
-                                                    <li><a href="#">About Us</a></li>
-                                                    <li><a href="#">Featured Property</a></li>
-                                                    <li><a href="#">Become A Member</a></li>
-                                                    <li><a href="#">Submit Property</a></li>
-                                                    <li><a href="#">How It Work</a></li>
-                                                    <li><a href="#">Our Agents</a></li>
+                                                    <li><a href="{{route('index')}}">Home</a></li>
+                                                    <li><a href="{{route('about')}}">About</a></li>
+                                                    <li><a href="{{route('faq')}}">faq</a></li>
+                                                    <li><a href="{{route('contact')}}">contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -180,17 +179,16 @@
                                             <div class="footer-widget">
                                                 <h4 class="widget-title text-secondary double-down-line-left position-relative">Contact Us</h4>
                                                 <ul>
-                                                    <li>Collins Street West, Victoria 8007, Australia</li>
-                                                    <li>+1 246-345-0695</li>
-                                                    <li>helpline@homex.com</li>
+                                                    <li>19 Jideofor Street, Thinkers Corner, Enugu.</li>
+                                                    <li>08076165672</li>
+                                                    <li>deumgroup@gmail.com</li>
                                                 </ul>
                                             </div>
                                             <div class="footer-widget media-widget mt-4 text-secondary hover-text-primary">
                                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                                <a href="#"><i class="fab fa-whatsapp"></i></a>
                                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fas fa-rss"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -204,12 +202,12 @@
             <div class="copyright">
                 <div class="container">
                     <div class="row row-cols-sm-2 row-cols-1">
-                        <div class="col"> <span>© 2021 Homex All right reserved</span> </div>
+                        <div class="col"> <span>© 2021 Deum Group of Companies All right reserved</span> </div>
                         <div class="col">
                             <ul class="line-menu text-ordinary float-end">
                                 <li><a href="#">Privacy & Policy</a></li>
                                 <li>|</li>
-                                <li><a href="#"> Site Map</a></li>
+                                <li><a href="#">Faq</a></li>
                             </ul>
                         </div>
                     </div>

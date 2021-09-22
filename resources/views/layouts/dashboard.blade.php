@@ -170,11 +170,15 @@
                 </div>
                 <div class="body">
                     <ul class="list-unstyled menu">
-                        <li><a href="events.html"><i class="zmdi zmdi-calendar-note"></i><span>Calendar</span></a></li>
-                        <li><a href="file-dashboard.html"><i class="zmdi zmdi-file-text"></i><span>File Manager</span></a></li>
-                        <li><a href="blog-dashboard.html"><i class="zmdi zmdi-blogger"></i><span>Blog</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="zmdi zmdi-arrows"></i><span>Notes</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="zmdi zmdi-view-column"></i><span>Taskboard</span></a></li>
+                        <li><a href="{{route('categories.create')}}"><i class="zmdi zmdi-calendar-note"></i><span>Add Category</span></a></li>
+                        <li><a href="{{route('categories.index')}}"><i class="zmdi zmdi-file-text"></i><span>Categories</span></a></li>
+                        <li><a href="{{route('posts.create')}}"><i class="zmdi zmdi-calendar-note"></i><span>Add Post</span></a></li>
+                        <li><a href="{{route('posts.index')}}"><i class="zmdi zmdi-file-text"></i><span>Posts</span></a></li>
+                        <li><a href="blog-dashboard.html"><i class="zmdi zmdi-blogger"></i><span>Users</span></a></li>
+                        <li><a href="{{route('lands.create')}}"><i class="zmdi zmdi-arrows"></i><span>Add Land</span></a></li>
+                        <li><a href="{{route('lands.index')}}"><i class="zmdi zmdi-view-column"></i><span>Lands</span></a></li>
+                        <li><a href="{{route('projects.create')}}"><i class="zmdi zmdi-view-column"></i><span>Add Projects</span></a></li>
+                        <li><a href="{{route('projects.index')}}"><i class="zmdi zmdi-view-column"></i><span>Projects</span></a></li>
                         <li><a href="{{route('password.change.create')}}"><i class="zmdi zmdi-view-column"></i><span>Change Password</span></a></li>
                         <li>
                             <form action="{{route('logout')}}" method="post">

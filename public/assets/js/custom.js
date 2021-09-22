@@ -2,6 +2,54 @@
 
     'use strict'
 
+    /* var fullHeight = function() {
+
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight').css('height', $(window).height());
+		});
+
+	};
+    fullHeight(); */
+
+    var halfHeight = function() {
+
+		$('.js-halfheight').css('height', $(window).height()*3/5);
+		$(window).resize(function(){
+			$('.js-halfheight').css('height', $(window).height()*3/5);
+		});
+
+	};
+	halfHeight();
+
+	var carousel = function() {
+		$('.home-slider').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:0,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:true,
+	    dots: true,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:1
+	      },
+	      1000:{
+	        items:1
+	      }
+	    }
+		});
+
+	};
+	carousel();
+
     //Cache jQuery Selector
     var $window = $(window),
         $header = $('#header'),
@@ -507,12 +555,16 @@
             },
 
             submitHandler: function(form) {
+
+                var $contactForm = $('#form-url').val()  + '/send-contact-form/' + $('#name').val() + '/' +  $('#email').val() + '/' + $('#subject').val() + '/' + $('#message').val();
+
                 $('#send').attr({ 'disabled': 'true', 'value': 'Sending...' });
                 $.ajax({
-                    type: "POST",
-                    url: "email.php",
+                    type: "GET",
+                    url: $contactForm,
                     data: $(form).serialize(),
-                    success: function() {
+                    success: function(data) {
+                        console.log(data);
                         $('#send').removeAttr('disabled').attr('value', 'Send');
                         $("#success").slideDown("slow");
                         setTimeout(function() {
@@ -520,7 +572,8 @@
                         }, 5000);
                         form.reset();
                     },
-                    error: function() {
+                    error: function(data) {
+                        console.log(data);
                         $('#send').removeAttr('disabled').attr('value', 'Send');
                         $("#error").slideDown("slow");
                         setTimeout(function() {

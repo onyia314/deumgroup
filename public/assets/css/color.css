@@ -14,6 +14,12 @@ Theme Color All Codes Variable
 	 --theme-white-color: #fff;  /* theme white font color ok*/
 }
 :root {
+	 --theme-blue-color: #0033FF;  /* theme white font color ok*/
+}
+:root {
+	 --theme-red-color: #c70101;  /* theme white font color ok*/
+}
+:root {
 	 --theme-light-color: #f8f8f8;  /* theme light gray color */
 }
 :root {
@@ -49,6 +55,3 @@ Font Variable
 :root {
 	 --theme-highlight-font: 'Comfortaa', cursive;  /* Font used in title or special area ok*/
 }
-
-
-
