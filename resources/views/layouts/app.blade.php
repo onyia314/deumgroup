@@ -96,7 +96,7 @@
                                     </li>
                                 </ul>
                 
-                                <a class="btn bg-primary text-white text-white d-none d-xl-block" href="tel: 08076165672"><i class="fas fa-phone-alt"></i> 08076165672</a>
+                                <a class="btn bg-primary text-white text-white d-none d-xl-block" href="tel: 07016864250"><i class="fas fa-phone-alt"></i> 07016864250</a>
                             </div>
                         </nav>
                     </div>
@@ -180,7 +180,7 @@ Contact us today and let us worry about getting your job done.
                                                 <h4 class="widget-title text-secondary double-down-line-left position-relative">Contact Us</h4>
                                                 <ul>
                                                     <li>19 Jideofor Street, Thinkers Corner, Enugu.</li>
-                                                    <li>08076165672</li>
+                                                    <li>07016864250</li>
                                                     <li>deumgroup@gmail.com</li>
                                                 </ul>
                                             </div>

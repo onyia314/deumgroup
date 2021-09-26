@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h5 class="mt-2 text-secondary text-justify">DEUM GROUP OF COMPANIES is here to serve your needs</h5>
+                        <h5 class="mt-2 text-secondary text-justify">DEUM GROUP OF COMPANIES Delivering world class services to satisfy our clients</h5>
                     </div>
                     <div class="col-md-4"> <a class="btn bg-primary text-white d-table float-md-end" href="{{route('contact')}}">Contact Us</a></div>
                 </div>
@@ -169,7 +169,8 @@
                 </div>
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
                     <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> <i class="flaticon-house flat-medium icon-primary" aria-hidden="true"></i>
+                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
+                             <i class="flaticon-real-estate flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.real-estate')}}">REAL ESTATE</a></h5>
                             <p>
                                 If you are looking to buy land in Nigeria, 
@@ -178,7 +179,8 @@
                             <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.real-estate')}}">Learn More</a> </div>
                     </div>
                     <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> <i class="flaticon-diagram flat-medium icon-primary" aria-hidden="true"></i>
+                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
+                             <i class="flaticon-diagram flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.engineering')}}">ENGINEERING</a></h5>
                             <p>
                                 We are a Strong and Reliable Company which have learnt from experience that it is the  
@@ -188,7 +190,8 @@
                             <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.engineering')}}">Learn More</a> </div>
                     </div>
                     <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> <i class="flaticon-rent flat-medium icon-primary" aria-hidden="true"></i>
+                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> 
+                            <i class="flaticon-code-signs flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.ict')}}">ICT</a></h5>
                             <p>
                                 We engage in providing services such as ICT, Solar Installation, Cyber Café Set up, Educational Services,
@@ -258,24 +261,36 @@
                             <h3 class="pb-4 mb-3 text-white">Make life for happy living</h3>
                             <ul>
                                 <li class="mb-4 text-white d-flex">
-                                    <i class="flaticon-reward flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
-                                    <div class="ps-2">
-                                        <h5 class="mb-3">Real Estate</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
-                                    </div>
-                                </li>
-                                <li class="mb-4 text-white d-flex">
                                     <i class="flaticon-real-estate flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
                                     <div class="ps-2">
-                                        <h5 class="mb-3">Engineering</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
+                                        <h5 class="mb-3">Real Estate</h5>
+                                        <p>
+                                            we have estates all over Enugu with about 100 plots each situated at strategic
+                                             places you would want to build your dream home in. 
+                                            Contact us to make a stress free deal at Deum Real Estate Ltd.
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="mb-4 text-white d-flex">
-                                    <i class="flaticon-seller flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
+                                    <i class="flaticon-diagram flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
+                                    <div class="ps-2">
+                                        <h5 class="mb-3">Engineering</h5>
+                                        <p>
+                                            Our years of experience in the Engineering Industry ranging from Civil,
+                                             Electrical to other Engineering departments speaks
+                                             through the numerous contracts we have completed for both private and Government establishment.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="mb-4 text-white d-flex">
+                                    <i class="flaticon-code-signs flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
                                     <div class="ps-2">
                                         <h5 class="mb-3">ICT</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
+                                        <p>
+                                            When you think of software designs (Website Development, Graphics Design, App Development) 
+                                            Computer Hardware Installation,
+                                             Solar installation, think of Deum Communication and Technology Ltd.
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -300,7 +315,7 @@
                         <div class="p-5 mb-4 bg-white shadow-one rounded">
                             <i class="flaticon-home flat-medium text-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary py-2 mt-3 mb-2">Search land</h5>
-                            <p>Select your land or appartment you are interested in</p>
+                            <p>Search for the land or property you are interested in on our website.</p>
                         </div>
                     </div>
                     <div class="col">

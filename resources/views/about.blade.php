@@ -83,42 +83,54 @@
         </div>
         <!--============== About Our Company Section End ==============-->
 
-        <!--============== Happy Living Section Start ==============-->
-        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url( '/assets/images/haddyliving.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="living-list pe-4">
-                            <h3 class="pb-4 mb-3 text-white">Make life for happy living</h3>
-                            <ul>
-                                <li class="mb-4 text-white d-flex">
-                                    <i class="flaticon-reward flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
-                                    <div class="ps-2">
-                                        <h5 class="mb-3">Experience Quality</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
-                                    </div>
-                                </li>
-                                <li class="mb-4 text-white d-flex">
-                                    <i class="flaticon-real-estate flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
-                                    <div class="ps-2">
-                                        <h5 class="mb-3">Experience Quality</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
-                                    </div>
-                                </li>
-                                <li class="mb-4 text-white d-flex">
-                                    <i class="flaticon-seller flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
-                                    <div class="ps-2">
-                                        <h5 class="mb-3">Experience Quality</h5>
-                                        <p>Ad non vivamus Elementum eget fringilla venenatis quisque, maecenas adipiscing aliquet justo. Libero. Gravida. Sapien, dolor nostra sem. Rutrum conubia inceptos egestas dolor class.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+       <!--============== Happy Living Section Start ==============-->
+       <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('/assets/images/haddyliving.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="living-list pe-4">
+                        <h3 class="pb-4 mb-3 text-white">Make life for happy living</h3>
+                        <ul>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="flaticon-real-estate flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
+                                <div class="ps-2">
+                                    <h5 class="mb-3">Real Estate</h5>
+                                    <p>
+                                        we have estates all over Enugu with about 100 plots each situated at strategic
+                                         places you would want to build your dream home in. 
+                                        Contact us to make a stress free deal at Deum Real Estate Ltd.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="flaticon-diagram flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
+                                <div class="ps-2">
+                                    <h5 class="mb-3">Engineering</h5>
+                                    <p>
+                                        Our years of experience in the Engineering Industry ranging from Civil,
+                                         Electrical to other Engineering departments speaks
+                                         through the numerous contracts we have completed for both private and Government establishment.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mb-4 text-white d-flex">
+                                <i class="flaticon-code-signs flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
+                                <div class="ps-2">
+                                    <h5 class="mb-3">ICT</h5>
+                                    <p>
+                                        When you think of software designs (Website Development, Graphics Design, App Development) 
+                                        Computer Hardware Installation,
+                                         Solar installation, think of Deum Communication and Technology Ltd.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!--============== Happy Living Section End ==============-->
+    </div>
+    <!--============== Happy Living Section End ==============-->
 
         <!--============== How it work Section Start ==============-->
         <div class="full-row bg-white">

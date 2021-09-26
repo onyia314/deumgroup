@@ -44,7 +44,7 @@ Theme Color All Codes Variable
 	 --theme-white-opacity-color: rgba(255, 255, 255, 0.3);  /* theme light color */
 }
 :root {
-	 --theme-dark-opacity-color: rgba(0, 0, 0, 0.5);  /* theme dark color ok*/
+	 --theme-dark-opacity-color: rgba(0, 0, 0, 0.2);  /* theme dark color ok*/
 }
 /*==================================
 Font Variable
