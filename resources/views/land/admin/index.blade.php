@@ -27,6 +27,7 @@
                     <td>
                         <form action="{{route('lands.destroy' , $land->id)}}" method="POST">
                             @csrf
+                            @method('delete')
                             <button type="submit" class="btn btn-danger">delete</button>
                         </form>
                     </td>

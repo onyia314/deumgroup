@@ -109,7 +109,7 @@
                                                         <ul>
                                                             <li><span>{{$land->area}}</span></li>
                                                             <li><span>{{$land->price}}</span></li>
-                                                            <li><span><a href="#">+ Read More</a></span></li>
+                                                            <li><span><a href="{{route('lands.show' , $land->id)}}">+ Read More</a></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>

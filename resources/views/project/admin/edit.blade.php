@@ -18,6 +18,7 @@
     <form id="form_validation" action="{{route('projects.update' , $project->id)}}" method="POST" enctype="multipart/form-data">
        
         @csrf
+        @method('put')
 
         <div class="form-group form-float mb-3 mt-4">
             <input type="file" name="project_image">

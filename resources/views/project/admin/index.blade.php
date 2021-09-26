@@ -23,8 +23,9 @@
                     <td>{{$project->created_at->format('d/m/Y')}}</td>
                     <td><a href="{{route('projects.edit' , $project->id)}}" class="btn btn-primary">edit</a></td>
                     <td>
-                        <form action="{{route('projects.destroy' , $project->id)}}" method="project">
+                        <form action="{{route('projects.destroy' , $project->id)}}" method="POST">
                             @csrf
+                            @method('delete')
                             <button type="submit" class="btn btn-danger">delete</button>
                         </form>
                     </td>
