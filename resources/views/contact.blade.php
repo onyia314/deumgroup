@@ -1,5 +1,20 @@
 @extends('layouts.app')
 
+@push('title')
+<title>Contact Us</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Contact Us">
+
+<meta name="keywords" content="deumgroup contact, deumgroup contact us, deumgroup of companies">
+<meta name="Deum Group" content="Deum group">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
     
         

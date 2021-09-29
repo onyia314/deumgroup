@@ -1,4 +1,19 @@
 @extends('layouts.app')
+
+@push('title')
+<title>{{$post->title}}</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="{{$post->title}}">
+<meta name="keywords" content="deum group blog, deumgroup, deumgroup blog">
+<meta name="Deum Group" content="{{$post->content}}">
+@endpush
+
+@push('link-tags')
+<link rel="icon" href="{{'/uploads' .'/' .$post->image_path}}">
+@endpush
+
 @section('content')
     <!--============== Banner Section Start ==============-->
     <div class="page-banner full-row bg-gray py-5">

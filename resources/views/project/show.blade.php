@@ -1,4 +1,20 @@
 @extends('layouts.app')
+
+
+@push('title')
+<title>{{$project->title}}</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="{{$project->title}}">
+<meta name="keywords" content="deum group engineering, deumgroup projects, deumgroup engineering projects">
+<meta name="Deum Group" content="{{$project->content}}">
+@endpush
+
+@push('link-tags')
+<link rel="icon" href="{{'/uploads' .'/' .$project->image_path}}">
+@endpush
+
 @section('content')
 
     <!--============== Banner Section Start ==============-->

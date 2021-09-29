@@ -1,5 +1,20 @@
 @extends('layouts.app')
-        
+
+@push('title')
+<title>Frequently Asked Questions</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Frequently asked questions">
+
+<meta name="keywords" content="deumgroup faq, deumgroup frequently asked questions, deumgroup of companies">
+<meta name="Deum Group" content="Deum group">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
         <!--============== Banner Section Start ==============-->
         <div class="page-banner full-row bg-gray py-5">

@@ -1,4 +1,19 @@
 @extends('layouts.app')
+
+@push('title')
+<title>{{$land->description}}</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="{{$land->description}}">
+<meta name="keywords" content="deum group land, deumgroup, deumgroup land">
+<meta name="Deum Group" content="{{{$land->description}}}">
+@endpush
+
+@push('link-tags')
+<link rel="icon" href="{{'/uploads' .'/' .$land->image_path}}">
+@endpush
+
 @section('content')
 
     <!--============== Banner Section Start ==============-->

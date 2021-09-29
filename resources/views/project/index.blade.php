@@ -1,4 +1,18 @@
 @extends('layouts.app')
+@push('title')
+<title>Deum group List of engineering projects</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Deum group List of engineering projects">
+<meta name="keywords" content="deum group projects, deumgroup engineering projects, deumgroup projects">
+<meta name="Deum Group" content="Deum group List of engineering projects">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
 
     <!--============== Banner Section Start ==============-->

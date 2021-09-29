@@ -1,4 +1,22 @@
 @extends('layouts.app')
+@push('title')
+<title>Deum Engineering</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Deum Real Estate Ltd is a real estate Marketing, Development and Investment Company
+incorporated under the COMPANIES
+AND ALLIDE MATTERS ACT 1990 with RC No 1741785 in PURSUANT TO SECTION 659. 
+We are challenged with providing our clients with a secure and Affordable Property in Nigeria. 
+We exist to serve our clients." >
+
+<meta name="keywords" content="deum real-estate, deumgroup realestate, deum properties">
+<meta name="Deum Group" content="Deum group ict">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
 
 @section('content')
     

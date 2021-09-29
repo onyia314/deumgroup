@@ -8,15 +8,13 @@
 
     <!-- Meta Tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Homex template">
-    <meta name="keywords" content="">
-    <meta name="author" content="Unicoder">
+    @stack('meta-tags')
 
-    <!-- Title -->
-    <title>DeumGroup - Real-Estate, Engineering, Ict</title>
+    @stack('title')
 
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/images/deum-engineering.png">
+    @stack('link-tags')
+
+    {{-- <link rel="icon" href="/assets/images/deum-engineering.png"> --}}
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">

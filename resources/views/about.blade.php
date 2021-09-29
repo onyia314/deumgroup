@@ -1,5 +1,23 @@
 @extends('layouts.app')
 
+@push('title')
+<title>About Us</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Deum Group of Companies is an Establishement Comprising of three major companies: Deum Engineering Ltd, Deum Real Estate LTD, Deum Communications and Technology Ltd.
+We are interested in Delivering Services to our Clients taste. These services ranges from Engineering to Real Estate and ICT. Our reliability and consecutive awesome performance gets us a lot of repeat jobs as we treat all Clients equally.
+Our integrity keeps us in Business.
+We are Deum">
+
+<meta name="keywords" content="deum group, deumgroup, deumgroup of companies">
+<meta name="Deum Group" content="Deum group">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
 
         <!--============== Banner Section Start ==============-->

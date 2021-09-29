@@ -1,5 +1,24 @@
 @extends('layouts.app')
 
+@push('title')
+<title>Deum Engineering</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content="Deum Engineering Consultancy Limited is a leading name in Engineering Consultancy 
+in Nigeria incorporated under the COMPANIES AND ALLIDE MATTERS ACT 1990 with RC No 119230
+ in PURSUANT TO SECTION 659.  We are a Strong and Reliable Company which have learnt from experience 
+ that it is the  details that make the difference and the company understands that 
+projects are about providing world class service during the process of construction." >
+
+<meta name="keywords" content="deum group engineering, deum engineering, deumgroup engineering">
+<meta name="Deum Group" content="Deum group">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
     
     <!--============== Banner Section Start ==============-->

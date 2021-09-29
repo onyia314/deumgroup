@@ -1,5 +1,24 @@
 @extends('layouts.app')
 
+@push('title')
+<title>Deum Engineering</title>
+@endpush
+
+@push('meta-tags')
+<meta name="description" content=" Deum Communication & Technology Ltd was formed by a group of professionals having vivid experience and
+wide exposure in Information Technology. People involved here are young qualified business graduates.
+We engage in providing services such as ICT, Solar Installation, Cyber Café Set up, Educational Services,
+Communication Services, Software Development, ICT Consultancy, Hardware repairs & Computer Services, 
+Printing Services, Graphics Designing, Telecom Services & sales of Telecommunication Equipment." >
+
+<meta name="keywords" content="deum group ict, deumgroup ict, deum ict">
+<meta name="Deum Group" content="Deum group ict">
+@endpush
+
+@push('link-tags')
+<link rel="icon" type="image/png" href="/assets/images/logo/deum-engineering.png">
+@endpush
+
 @section('content')
     
     <!--============== Banner Section Start ==============-->
