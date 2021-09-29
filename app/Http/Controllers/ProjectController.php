@@ -13,12 +13,12 @@ class ProjectController extends Controller
     }
 
     public function index(){
-        $projects = Project::paginate(10);
+        $projects = Project::orderBy('created_at' , 'desc')->paginate(10);
         return view('project.admin.index' , ['projects' => $projects]);
     }
 
     public function guestIndex(){
-        $projects = Project::paginate(10);
+        $projects = Project::orderBy('created_at' , 'desc')->paginate(10);
         return view('project.index' , ['projects' => $projects]);
     }
 

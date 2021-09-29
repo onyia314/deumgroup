@@ -4,9 +4,9 @@
 
         @foreach ($posts as $post)
         <li>
-            <a href="#"><img src="{{'/uploads' .'/' .$post->image_path}}" alt=""></a>
+            <a href="{{route('posts.show' , $post->slug)}}"><img src="{{'/uploads' .'/' .$post->image_path}}" alt=""></a>
             <div class="post-info">
-                <h6 class="text-secondary hover-text-primary"><a href="#">{{$post->title}}</a></h6>
+                <h6 class="text-secondary hover-text-primary"><a href="{{route('posts.show' , $post->slug)}}">{{$post->title}}</a></h6>
                 <span>{{$post->created_at->format('d/m/Y')}}</span> 
             </div>
         </li>    

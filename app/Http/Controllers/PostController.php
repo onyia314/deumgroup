@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Land;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Str;
@@ -12,14 +13,15 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(2);
+        $posts = Post::orderBy('created_at' , 'desc')->paginate(6);
         $categories = Category::all();
-        return view('post.index' , ['posts' => $posts , 'categories' => $categories]);
+        $lands = Land::orderBy('created_at' , 'desc')->paginate(6);
+        return view('post.index' , ['posts' => $posts , 'categories' => $categories , 'lands' => $lands]);
     }
 
     public function adminIndex()
     {
-        $posts = Post::paginate(2);
+        $posts = Post::orderBy('created_at' , 'desc')->paginate(10);
         return view('post.admin.index' , ['posts' => $posts]);
     }
 

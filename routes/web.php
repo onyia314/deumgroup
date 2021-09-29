@@ -23,9 +23,9 @@ use App\Http\Controllers\SendContactUsEmail;
 */
 
 Route::get('/', function () {
-    $lands = Land::all();
-    $posts = Post::paginate(3);
-    $projects = Project::paginate(3);
+    $lands = Land::orderBy('created_at' , 'desc')->paginate(5);
+    $posts = Post::orderBy('created_at' , 'desc')->paginate(3);
+    $projects = Project::orderBy('created_at' , 'desc')->paginate(4);
     return view('index' , ['lands' => $lands , 'posts' => $posts , 'projects' => $projects]);
 })->name('index');
 

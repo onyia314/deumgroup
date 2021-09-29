@@ -16,7 +16,7 @@
 @section('content')
 
     <!--============== Banner Section Start ==============-->
-    <div class="page-banner full-row bg-gray py-5">
+    {{-- <div class="page-banner full-row bg-gray py-5">
         <div class="container">
             <div class="row row-cols-md-2 row-cols-1 g-3">
                 <div class="col">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--============== Banner Section End ==============-->
 
     <!--============== Blog & Sidebar Section Start ==============-->
@@ -41,11 +41,12 @@
             <div class="row">
                 <div class="col-lg-4 order-lg-2">
                     <div class="blog-sidebar mt-md-50">
-                        <div class="search_widget">
+
+                        {{-- <div class="search_widget">
                             <form action="#" method="post">
                                 <input class="form-control" type="text" name="search" placeholder="Search Here" />
                             </form>
-                        </div>
+                        </div> --}}
 
                         @include('post.includes.categories')
                         @include('post.includes.posts')

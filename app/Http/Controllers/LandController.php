@@ -13,12 +13,12 @@ class LandController extends Controller
     }
     
     public function index(){
-        $lands = Land::paginate(10);
+        $lands = Land::orderBy('created_at' , 'desc')->paginate(10);
         return view('land.admin.index' , ['lands' => $lands]);
     }
 
     public function guestIndex(){
-        $lands = Land::paginate(10);
+        $lands = Land::orderBy('created_at' , 'desc')->paginate(10);
         return view('land.index' , ['lands' => $lands]);
     }
 
