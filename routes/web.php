@@ -64,6 +64,7 @@ Route::name('services.')->prefix('services')->group(function(){
     
 });
 
+Route::get('/view/categories/posts/{category_id}' , [CategoryController::class , 'categoryPosts'])->name('category.posts');
 Route::resource('categories' , CategoryController::class);
 
 Route::get('/blog', [PostController::class , 'index'])->name('blog');

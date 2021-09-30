@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('title')
-<title>Deum Engineering</title>
+<title>Deum ICT</title>
 @endpush
 
 @push('meta-tags')
@@ -63,7 +63,7 @@ Printing Services, Graphics Designing, Telecom Services & sales of Telecommunica
                         </p>
                     </div>
                 </div>
-                <div class="col"> <img src="/assets/images/services/01.jpg" alt=""> </div>
+                <div class="col"> <img src="/assets/images/services/ict.jpg" alt=""> </div>
             </div>
         </div>
     </div>
@@ -96,95 +96,18 @@ Printing Services, Graphics Designing, Telecom Services & sales of Telecommunica
     </div>
     <!--============== Text Box Five Section End ==============-->
 
-     <!--============== Text Box Five Section Start ==============-->
-     <div class="full-row bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-secondary double-down-line text-center">Why Choose Us ?</h2>
-                    <span class="text-center mt-4 d-block mb-5 w-60 mx-auto sub-title">Mus diam orci nibh netus morbi eros inceptos ultricies elementum nullam potenti nascetur habitasse dapibus. Primis Dui nisi mauris tempus.</span>
-                </div>
-            </div>
-            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Probublity Research</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Due Diligence</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Help Investor</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Investment Analysis</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Right Structure</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mb-5">
-                        <h5 class="mb-3 text-secondary">Management Company</h5>
-                        <p>Suspendisse nonummy pellentesq placerat. Malesuad aenean. Leo curabitur ementum ultr. Rhoncus fusce ac eu nunc euismod ad dignissim natoque. Penatib natoque arcu. Ridiculus nunc.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--============== Text Box Five Section End ==============-->
-
-    <div class="full-row bg-white pt-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-secondary double-down-line text-center">Benefits From Us</h2>
-                    <span class="text-center mt-4 d-block mb-5 w-60 mx-auto sub-title">Best wishes on finding your dream home! Our Home Loan with its attractive features and competitive interest.</span>
-                </div>
-                <div class="col-md-6">
-                    <div class="benefit-text">
-                        <p>Mauris magnis. Orci Augue morbi suscipit. Venenatis, sociis amet met habitant dictum. Ultrices vestibulum cubilia hac quam metus. Erat auctor sociis conubia A scelerisque Elit pulvinar varius duis. Tempus natoque imperdiet
-                            elit nostra placerat. Volutpat rutrum justo dignissim nonummy tempor feugiat. Morbi lacinia nam cubilia phasellus senectus fames fringilla dictum tellus vulputate. Laoreet etiam curabitur, tincidunt euismod lacinia. Consequat
-                            donec enim pharetra risus urna nonummy posuere. Facilisis inceptos. Nibh proin lorem volutpat Ad. Libero neque nibh gravida ullamcorper suspendisse ridiculus dui nisl ad. Urna justo torquent eleifend varius sociosqu fringilla
-                            arcu. Vehicula sagittis natoque aliquam. Suscipit ipsum. Facilisi ultrices turpis leo pellentesque eros hendrerit phasellus tellus platea tortor, lobortis molestie diam. </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="benefit-text">
-                        <p>Etiam mauris senectus elementum class penatibus. Massa vulputate class primis metus dignissim, nam bibendum risus mattis. Feugiat condimentum cursus sem euismod amet ad lacinia lacinia duis sed Phasellus nunc feugiat risus
-                            amet arcu sapien gravida. Lorem. Suspendisse litora elementum blandit lobortis risus. Pretium facilisi aenean mauris taciti suspendisse potenti malesuada neque facilisi ipsum dictum maecenas rutrum, risus risus. Odio tortor,
-                            magnis platea quis. Rhoncus faucibus. Mollis habitant pulvinar vel malesuada mauris taciti, nam pede. Aenean consectetuer non, imperdiet gravida facilisis turpis conubia mollis pede elementum hendrerit ut et pulvinar.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--============== About Service Section End ==============-->
-
     <!--============== Positive Thinking Section Start ==============-->
-    <div class="full-row overlay-secondary" style="background-image: url('/assets/images/making.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
+    <div class="full-row overlay-secondary" style="background-image: url('/assets/images/services/laptops.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container position-relative">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="text-white">
-                        <h2 class="text-white double-down-line-left position-relative pb-4 mb-5"><span class="h4 d-block">Start Study</span>Making your positive thinking</h2>
-                        <p>Malesuada hac lectus. Ligula donec. Sodales odio conubia facilisis, sagittis velit rutrum sodales, conubia. Curae; nunc conubia accumsan vitae congue ornare ultricies bibendum justo. Mus sit porta luctus ultricies platea duis
-                            cum aliquam tristique gravida accumsan orci velit lobortis posuere, eu ullamcorper quam eget. Tempor urna, luctus leo parturient augue.</p>
-                        <a class="btn bg-primary text-white mt-4" href="#">Download Brochure</a>
+                        <h2 class="text-white double-down-line-left position-relative pb-4 mb-5"><span class="h4 d-block">Think About It</span>Making your positive thinking</h2>
+                        <p>When you think of software designs (Website Development, Graphics Design, 
+                            App Development) Computer Hardware Installation, Solar installation, think 
+                            of Deum Communication and Technology Ltd
+                        </p>
+                        <a class="btn bg-primary text-white mt-4" href="{{route('contact')}}">Contact Us</a>
                     </div>
                 </div>
             </div>

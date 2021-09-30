@@ -41,18 +41,7 @@
         <!--============== Contact Information Section Start ==============-->
         <div class="full-row bg-white">
             <div class="container">
-                <div class="row row-cols-lg-3 row-cols-1">
-                    <div class="col">
-                        <div class="contact-info">
-                            <h3 class="mb-4 text-secondary">Support</h3>
-                            <div class="d-flex">
-                                <div class="circle me-4"><img src="/assets/images/team/01.png" alt=""></div>
-                                <div class="contact-details">
-                                    <h5>Lawrance Kyle</h5>
-                                    <span class="d-block">Support Member</span> <a class="text-primary" href="#">www.support@homex.com</a> </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-lg-2 row-cols-1">
                     <div class="col">
                         <div class="contact-info">
                             <h3 class="mb-4 text-secondary">Contacts</h3>
@@ -65,7 +54,7 @@
                                 <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-primary me-2 font-13 mt-2"></i>
                                     <div class="contact-address">
                                         <h5 class="text-secondary">Call Us</h5>
-                                        <span class="d-table">08076165672</span> </div>
+                                        <span class="d-table">07016864250</span> </div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-envelope text-primary me-2 font-13 mt-2"></i>
                                     <div class="contact-address">
@@ -97,7 +86,7 @@
                 <div class="row">
                     <div class="col">
                         <h2 class="text-secondary double-down-line text-center">Get In Touch</h2>
-                        <span class="text-center mt-4 d-block mb-5">Nullam dapibus nullam aliquet maecenas pede dignissim Felis porta risus sociis.</span> </div>
+                        <span class="text-center mt-4 d-block mb-5">Send us a quick mail using the contact form below.</span> </div>
                 </div>
                 <div class="row">
                     <div class="col">

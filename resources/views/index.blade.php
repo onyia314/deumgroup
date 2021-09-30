@@ -79,6 +79,53 @@
         </div>
         <!--============== Search One Section End ==============-->
 
+        <!--============== Text Block One Section Start ==============-->
+        <div class="full-row bg-white pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-secondary double-down-line text-center">What We Do</h2>
+                        <span class="text-center mt-3 d-block mb-3">Real Estate , Engineering and ICT</span> </div>
+                </div>
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+                    <div class="col">
+                        <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
+                             <i class="flaticon-real-estate flat-medium icon-primary" aria-hidden="true"></i>
+                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.real-estate')}}">REAL ESTATE</a></h5>
+                            <p>
+                                If you are looking to buy land in Nigeria, 
+                                You have reached the destination for amazing Land offers and exceptional services. 
+                            </p>
+                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.real-estate')}}">Learn More</a> </div>
+                    </div>
+                    <div class="col">
+                        <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
+                             <i class="flaticon-diagram flat-medium icon-primary" aria-hidden="true"></i>
+                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.engineering')}}">ENGINEERING</a></h5>
+                            <p>
+                                We are a Strong and Reliable Company which have learnt from experience that it is the  
+                                details that make the difference and the company understands that projects are 
+                                about providing world class service during the process of construction. 
+                            </p>
+                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.engineering')}}">Learn More</a> </div>
+                    </div>
+                    <div class="col">
+                        <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> 
+                            <i class="flaticon-code-signs flat-medium icon-primary" aria-hidden="true"></i>
+                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.ict')}}">ICT</a></h5>
+                            <p>
+                                We engage in providing services such as ICT, Solar Installation, Cyber Café Set up, Educational Services,
+                                 Communication Services, Software Development, ICT Consultancy, Hardware repairs & Computer Services, 
+                                 Printing Services, Graphics Designing,
+                                 Telecom Services & sales of Telecommunication Equipment
+                            </p>
+                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.ict')}}">Learn More</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Text Block One Section End ==============-->
+
         <!--============== Recent Property Section Start ==============-->
         <div class="full-row bg-white pb-2">
             <div class="container">
@@ -116,7 +163,7 @@
                                                 </div>
                                                 <div class="featured-thumb-data shadow-one">
                                                     <div class="p-4">
-                                                        <h5 class="text-secondary hover-text-primary mb-2"><a href="#">Deum Homes</a></h5>
+                                                        <h5 class="text-secondary hover-text-primary mb-2"><a href="{{route('lands.show' , $land->id)}}">Deum Lands</a></h5>
                                                         <span class="location"><i class="fas fa-map-marker-alt text-primary"></i> {{$land->location}}</span>
                                                     </div>
                                                     <div class="bg-gray quantity px-4 pt-4">
@@ -158,7 +205,7 @@
                                         <div class="date text-white position-absolute z-index-9">{{$project->created_at->format('d/m/Y')}}</div>
                                     </div>
                                     <div class="p-4">
-                                        <h6 class="text-secondary hover-text-primary mb-4"><a href="blog-details.html">{{$project->title}}</a></h6>
+                                        <h6 class="text-secondary hover-text-primary mb-4"><a href="{{route('projects.show' , $project->id)}}">{{$project->title}}</a></h6>
                                         <p>
                                             {{Str::words($project->content , 30)}}
                                         </p>
@@ -172,53 +219,6 @@
             </div>
         </div>
         <!--============== project Section End ==============-->
-
-        <!--============== Text Block One Section Start ==============-->
-        <div class="full-row bg-white pb-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-secondary double-down-line text-center">What We Do</h2>
-                        <span class="text-center mt-4 d-block mb-5">Real Estate , Engineering and ICT</span> </div>
-                </div>
-                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
-                    <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
-                             <i class="flaticon-real-estate flat-medium icon-primary" aria-hidden="true"></i>
-                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.real-estate')}}">REAL ESTATE</a></h5>
-                            <p>
-                                If you are looking to buy land in Nigeria, 
-                                You have reached the destination for amazing Land offers and exceptional services. 
-                            </p>
-                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.real-estate')}}">Learn More</a> </div>
-                    </div>
-                    <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
-                             <i class="flaticon-diagram flat-medium icon-primary" aria-hidden="true"></i>
-                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.engineering')}}">ENGINEERING</a></h5>
-                            <p>
-                                We are a Strong and Reliable Company which have learnt from experience that it is the  
-                                details that make the difference and the company understands that projects are 
-                                about providing world class service during the process of construction. 
-                            </p>
-                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.engineering')}}">Learn More</a> </div>
-                    </div>
-                    <div class="col">
-                        <div class="py-5 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> 
-                            <i class="flaticon-code-signs flat-medium icon-primary" aria-hidden="true"></i>
-                            <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.ict')}}">ICT</a></h5>
-                            <p>
-                                We engage in providing services such as ICT, Solar Installation, Cyber Café Set up, Educational Services,
-                                 Communication Services, Software Development, ICT Consultancy, Hardware repairs & Computer Services, 
-                                 Printing Services, Graphics Designing,
-                                 Telecom Services & sales of Telecommunication Equipment
-                            </p>
-                            <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.ict')}}">Learn More</a> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--============== Text Block One Section End ==============-->
 
         <!--============== Popular Place Section Start ==============-->
         {{-- <div class="full-row bg-white">
@@ -367,7 +367,7 @@
                                         <div class="date text-white position-absolute z-index-9">{{$post->created_at->format('d/m/Y')}}</div>
                                     </div>
                                     <div class="p-4">
-                                        <h6 class="text-secondary hover-text-primary mb-4"><a href="blog-details.html">{{$post->title}}</a></h6>
+                                        <h6 class="text-secondary hover-text-primary mb-4"><a href="{{route('posts.show' , $post->slug)}}">{{$post->title}}</a></h6>
                                         <p>
                                             {{Str::words($post->content , 30)}}
                                         </p>

@@ -69,7 +69,7 @@
                                 <ul class="navbar-nav me-auto">
                                     <li class="nav-item"> <a class="nav-link {{Route::is('index') ? 'active' : ''}}" href="{{route('index')}}">Home</a> </li>
                                     <li class="nav-item"> <a class="nav-link {{Route::is('about') ? 'active' : ''}}" href="{{route('about')}}">About</a> </li>
-                                    <li class="nav-item"> <a class="nav-link {{Route::is('posts.index') ? 'active' : ''}}" href="{{route('blog')}}">Blog</a> </li>
+                                    <li class="nav-item"> <a class="nav-link {{Route::is('blog') || Route::is('posts.show') ? 'active' : ''}}" href="{{route('blog')}}">Blog</a> </li>
                                     <li class="nav-item dropdown"> 
                                         <a class="nav-link dropdown-toggle {{Route::is('services.real-estate') || Route::is('services.engineering') || Route::is('services.ict')  ? 'active' : ''}}" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Services
@@ -157,7 +157,7 @@ Contact us today and let us worry about getting your job done.
                                                 <h4 class="widget-title text-secondary double-down-line-left position-relative">Support</h4>
                                                 <ul>
                                                     <li><a href="#">Terms and Condition</a></li>
-                                                    <li><a href="{{route('faq')}}">Freequenly Ask Question</a></li>
+                                                    <li><a href="{{route('faq')}}">Freequenly Asked Question</a></li>
                                                     <li><a href="{{route('contact')}}">Contact</a></li>
                                                 </ul>
                                             </div>
@@ -203,9 +203,9 @@ Contact us today and let us worry about getting your job done.
                         <div class="col"> <span>© 2021 Deum Group of Companies All right reserved</span> </div>
                         <div class="col">
                             <ul class="line-menu text-ordinary float-end">
-                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="{{route('about')}}">About Us</a></li>
                                 <li>|</li>
-                                <li><a href="#">Faq</a></li>
+                                <li><a href="{{route('faq')}}">Faq</a></li>
                             </ul>
                         </div>
                     </div>

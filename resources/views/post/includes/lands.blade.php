@@ -3,9 +3,9 @@
     <ul>
         @foreach ($lands as $land)
             <li>
-                <a href="#"><img src="{{'/uploads' .'/' .$land->image_path}}" alt=""></a>
+                <a href="{{route('lands.show' , $land->id)}}"><img src="{{'/uploads' .'/' .$land->image_path}}" alt=""></a>
                 <div class="thumb-body">
-                    <h6 class="text-secondary hover-text-primary"><a href="property-single-1.html">Deumgroup Realestate</a></h6>
+                    <h6 class="text-secondary hover-text-primary"><a href="{{route('lands.show' , $land->id)}}">Deumgroup Realestate</a></h6>
                     <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> {{$land->location}}</span>
                     <div class="mt-2 d-flex">
                         <span class="text-primary h6">{{$land->area}}</sub></span>

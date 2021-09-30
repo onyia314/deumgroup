@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Land;
+use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -16,6 +18,15 @@ class CategoryController extends Controller
     {
         $categories = Category::paginate(5);
         return view('category.admin.index' , ['categories' => $categories]);
+    }
+
+    public function categoryPosts($category_id)
+    {
+        $categories = Category::all();
+        $posts = Post::whereHas('categories' , function($cat) use($category_id){
+            $cat->where('categories.id' , $category_id);
+        })->paginate(10);
+        return view('category.posts' , ['categories' => $categories, 'posts' => $posts]);
     }
 
     /**

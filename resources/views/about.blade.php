@@ -61,38 +61,31 @@ We are Deum">
                                 We are Deum
                             </p>
                         </div>
-                        <div class="fact-counter mt-5 md-mb-40">
-                            <div class="row row-cols-md-3 row-cols-1 g-4">
-                                <div class="col">
-                                    <div class="count wow text-center" data-wow-duration="300ms">
-                                        <div class="text-primary mb-3 d-flex justify-content-center">
-                                            <h2 class="count-num" data-speed="3000" data-stop="1310">0</h2>
-                                            <strong>+</strong>
-                                        </div>
-                                        <span class="h6">Deals Success</span>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="count wow text-center" data-wow-duration="300ms">
-                                        <div class="text-primary mb-3 d-flex justify-content-center">
-                                            <h2 class="count-num" data-speed="3000" data-stop="946">0</h2>
-                                            <strong>+</strong>
-                                        </div>
-                                        <span class="h6">Insurance Done</span>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="count wow text-center" data-wow-duration="300ms">
-                                        <div class="text-primary mb-3 d-flex justify-content-center"><strong>$</strong>
-                                            <h2 class="count-num" data-speed="3000" data-stop="751867">0</h2>
-                                            <strong>+</strong>
-                                        </div>
-                                        <span class="h6">Micro Finincing</span>
-                                    </div>
-                                </div>
+                        
+                        <div class="about-content">
+
+                            <div class="col">
+                                <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4">MEET ENGR. CHINWE MBAH MNSE, M.ENGR, R.ENGR OUR FOUNDER AND CEO</h3>
                             </div>
+
+                            <p>
+                                Engr. Chinwe Mbah is the MD/CEO of Deum Group of Companies which consists of Deum Engineering Co. Ltd,
+                                 Deum Real Estate LTD and Deum Communications & Technology Ltd. She is an erudite Engineer with vast
+                                  experience in Engineering Project Management, Consultancy and Great 
+                                Leadership Skill which she uses to coordinate her team of Engineers to achieve outstanding goals.
+                            </p>
+                            <p>
+                                She has lots of certification and Membership from recognised organisations 
+                                like COREN, NSE, APWEN to mention a few and has worked with State Governments and some Government 
+                                establishment as Government Appointee. The Innovator innovated a device capable of detecting malicious
+                                 callers. She is currently the Chairperson Nkata Ndi Inyom Igbo (NNII). She is hardworking, dedicated,
+                                 enthusiastic about her work and a social individual everyone wants to work with or have as a mentor.
+                            </p>
                         </div>
+
+                        
                     </div>
+
                     <div class="col-lg-5">
                         <div class="about-img"> <img src="/assets/images/about/ceo.jpeg" alt=""> </div>
                     </div>

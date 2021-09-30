@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @push('title')
-<title>Deum group blog</title>
+<title>Deum group category posts</title>
 @endpush
 
 @push('meta-tags')
@@ -52,7 +52,7 @@
                                     <div class="date text-white position-absolute z-index-9">{{$post->title}}</div>
                                 </div>
                                 <div class="p-4">
-                                    <h6 class="text-secondary hover-text-primary mb-4"><a href="blog-details.html">{{Str::words($post->content , 5)}}</a></h6>
+                                    <h6 class="text-secondary hover-text-primary mb-4"><a href="{{route('posts.show' , $post->slug)}}">{{Str::words($post->content , 5)}}</a></h6>
                                     <p>
                                         @foreach ($post->categories as $category)
                                             <span>{{$category->name}}</span>
@@ -94,10 +94,6 @@
                         </div> --}}
 
                         @include('post.includes.categories')
-                        @include('post.includes.posts')
-                        @include('post.includes.lands')
-                        @include('post.includes.featured')
-                        
                     </div>
                 </div>
 
