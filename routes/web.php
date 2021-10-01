@@ -41,7 +41,7 @@ Route::get('/contact' , function(){
     return view('contact');
 })->name('contact');
 
-Route::group(['middleware' => ['json.response']] , function(){
+Route::group(['middleware' => ['json.response' , 'cors']] , function(){
     //no need for @csrf here so we make use of Get method
     Route::get('/send-contact-form/{name}/{email}/{subject}/{message}' , [SendContactUsEmail::class , 'send'])->name('sendContactEmail');
 });
