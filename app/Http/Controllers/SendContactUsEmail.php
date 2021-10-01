@@ -9,32 +9,25 @@ use Illuminate\Support\Facades\Validator;
 
 class SendContactUsEmail extends Controller
 {
-    public function send(Request $request , $name , $email, $subject, $message){
+    public function send(Request $request){
 
         $userData = $request->route()->parameters();
 
         $validator = Validator::make($userData , [
             'name' => 'required|string',
             'email'=> 'required|email',
-            'subject' => 'required|string',
-            'message' => 'required|string|min:5'
+            'subject' => 'required|string|min:3|max:300',
+            'message' => 'required|string|min:3|max:1000'
         ]);
 
+
         if($validator->fails()){
-            return response()->json([
-                'message' => 'failed validation'
-            ] , 422);
+            return response(['message' => 'validationError' , 'errors' => $validator->errors()]);
         }
 
-        //Mail::to(env('DEUM_EMAIL_ADRRESS'))->send(new ContactUsMail($userData));
+        Mail::to(env('DEUM_EMAIL_ADDRESS'))->send(new ContactUsMail($userData));
 
-        return response()->json([
-            'message' => 'OK'
-        ],201);
+        return response(['message' => 'OK']);
     }
 
-    public function dummy(Request $request , $name , $email, $subject, $message){
-        $userData = $request->route()->parameters();
-        Mail::to(env('DEUM_EMAIL_ADRRESS'))->send(new ContactUsMail($userData));
-    }
 }

@@ -19,7 +19,7 @@
     
         
         <!--============== Banner Section Start ==============-->
-        <div class="page-banner full-row bg-gray py-5">
+        <div class="page-banner full-row bg-gray py-2">
             <div class="container">
                 <div class="row row-cols-md-2 row-cols-1 g-3">
                     <div class="col">
@@ -37,6 +37,43 @@
             </div>
         </div>
         <!--============== Banner Section End ==============-->
+
+        <!--============== Get In Touch Section Start ==============-->
+        <div class="full-row bg-white pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-secondary double-down-line text-center">Get In Touch</h2>
+                        <span class="text-center mt-4 d-block mb-5">Send us a quick mail using the contact form below.</span> </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form id="contact-form" class="w-100" action="" method="get">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" id="name" name="name" class="form-control bg-gray mb-3" placeholder="Your Name*">
+                                    <input type="text" id="email" name="email" class="form-control bg-gray mb-3" placeholder="Email Address*">
+                                    <input type="text" id="subject" name="subject" class="form-control bg-gray mb-3" placeholder="Subject">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="hidden" name="form-url" id="form-url" value="{{env('APP_URL')}}">
+                                    <textarea id="message" name="message" class="form-control bg-gray mb-3" rows="5" placeholder="Type Comments..."></textarea>
+                                    <button type="submit" id="send" value="send message" class="btn btn-primary">Send Message</button>
+                                </div>
+                                <div class="col-lg-12 pt-3">
+                                    <div class="error-handel">
+                                        <div class = "text-danger d-none" id="backendErrors"></div>
+                                        <div class="alert alert-success d-none" id="success">Your email sent Successfully, Thank you.</div>
+                                        <div class="alert alert-danger d-none" id="error"> Error occurred while sending email. Please try again later.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--============== Get In Touch Section End ==============-->
 
         <!--============== Contact Information Section Start ==============-->
         <div class="full-row bg-white">
@@ -80,41 +117,6 @@
         </div>
         <!--============== Contact Information Section End ==============-->
 
-        <!--============== Get In Touch Section Start ==============-->
-        <div class="full-row bg-white pt-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="text-secondary double-down-line text-center">Get In Touch</h2>
-                        <span class="text-center mt-4 d-block mb-5">Send us a quick mail using the contact form below.</span> </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <form id="contact-form" class="w-100" action="" method="get">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" id="name" name="name" class="form-control bg-gray mb-3" placeholder="Your Name*">
-                                    <input type="text" id="email" name="email" class="form-control bg-gray mb-3" placeholder="Email Address*">
-                                    <input type="text" id="subject" name="subject" class="form-control bg-gray mb-3" placeholder="Subject">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="hidden" name="form-url" id="form-url" value="{{env('APP_URL')}}">
-                                    <textarea id="message" name="message" class="form-control bg-gray mb-3" rows="5" placeholder="Type Comments..."></textarea>
-                                    <button type="submit" id="send" value="send message" class="btn btn-primary">Send Message</button>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="error-handel">
-                                        <div class="d-none" id="success">Your email sent Successfully, Thank you.</div>
-                                        <div class="d-none" id="error"> Error occurred while sending email. Please try again later.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--============== Get In Touch Section End ==============-->
 
         {{-- <!--============== Map Section Start ==============-->
         <div class="full-row bg-white p-0">

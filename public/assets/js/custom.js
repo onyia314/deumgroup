@@ -564,18 +564,36 @@
                     url: $contactForm,
                     data: $(form).serialize(),
                     success: function(data) {
-                        console.log(data);
-                        $('#send').removeAttr('disabled').attr('value', 'Send');
-                        $("#success").slideDown("slow");
-                        setTimeout(function() {
-                            $("#success").slideUp("slow");
-                        }, 5000);
-                        form.reset();
+                        if(data.message == 'OK'){
+                            $('#send').removeAttr('disabled').attr('value', 'Send');
+                            $("#success").removeClass('d-none').slideDown("slow");
+                            setTimeout(function() {
+                                $("#success").slideUp("slow");
+                            }, 5000);
+                            form.reset();
+                        }
+
+                        if(data.message == 'validationError'){
+                            $('#send').removeAttr('disabled').attr('value', 'Send');
+                            let errors = []
+                            for(let prop in data.errors){
+                                data.errors[prop].forEach(error => {
+                                   errors.push(error);
+                                });
+                            }
+                            errors = errors.join('<br>');
+                            $('#backendErrors').html(errors);
+
+                            $("#backendErrors").removeClass('d-none').slideDown("slow");
+                            setTimeout(function() {
+                                $("#backendErrors").slideUp("slow");
+                            }, 6000);
+                        }
                     },
                     error: function(data) {
                         console.log(data);
                         $('#send').removeAttr('disabled').attr('value', 'Send');
-                        $("#error").slideDown("slow");
+                        $("#error").removeClass('d-none').slideDown("slow");
                         setTimeout(function() {
                             $("#error").slideUp("slow");
                         }, 5000);

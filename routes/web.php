@@ -43,10 +43,8 @@ Route::get('/contact' , function(){
 
 Route::group(['middleware' => ['json.response']] , function(){
     //no need for @csrf here so we make use of Get method
-    Route::get('/send-contact-form/{name}/{email}/{subject}/{message}' , [SendContactUsEmail::class , 'send']);
-    Route::get('/send-dummy-contact-form/{name}/{email}/{subject}/{message}' , [SendContactUsEmail::class , 'dummy']);
+    Route::get('/send-contact-form/{name}/{email}/{subject}/{message}' , [SendContactUsEmail::class , 'send'])->name('sendContactEmail');
 });
-
 
 Route::name('services.')->prefix('services')->group(function(){
 
