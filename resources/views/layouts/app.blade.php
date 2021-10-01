@@ -181,11 +181,12 @@ Contact us today and let us worry about getting your job done.
                                                     <li>07016864250</li>
                                                     <li>deumgroup@gmail.com</li>
                                                 </ul>
-                                            </div>
+                                        </div>
                                             <div class="footer-widget media-widget mt-4 text-secondary hover-text-primary">
                                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                                <i class="icon ion-social-whatsapp-outline"></i>.
+                                                <a href="https://wa.me/+2347016864250"><i class="fab fa-whatsapp"></i></a>
                                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                             </div>
                                         </div>
@@ -211,11 +212,16 @@ Contact us today and let us worry about getting your job done.
                     </div>
                 </div>
             </div>
+
             <!-- Copyright End -->
         </footer>
         <!--============== Footer Section End ==============-->
 
         <!-- Scroll to top -->
+        <a target = "_blank" href="https://wa.me/+2347016864250" style="display:block; height:35px; width:35px; position: fixed; bottom:70px; right:15px;">
+            <img src="/assets/images/logo/whatsapp-logo.png" alt="Chat">
+        </a>
+        
         <a href="#" class="bg-secondary text-white" id="scroll"><i class="fas fa-angle-up"></i></a>
         <!-- End Scroll To top -->
     </div>
