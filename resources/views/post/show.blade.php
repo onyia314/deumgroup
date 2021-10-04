@@ -66,11 +66,14 @@
                             <div class="d-flex flex-wrap align-items-center mt-5">
                                 <label class="me-4 text-secondary font-weight-bold my-1">Share This Post In Your Media :</label>
                                 <div class="media-widget text-secondary hover-text-primary my-1">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="{{'https://www.facebook.com/sharer/sharer.php?u=' .urlencode(url()->full()) }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="{{'https://api.whatsapp.com/send?text=' .url()->full() }}" data-action="share/whatsapp/share" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="{{'https://twitter.com/intent/tweet?url=' .url()->full()}}" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    {{-- 
                                     <a href="#"><i class="fab fa-google-plus-g"></i></a>
                                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fas fa-rss"></i></a>
+                                    <a href="#"><i class="fas fa-rss"></i></a> 
+                                    --}}
                                 </div>
                             </div>
 
