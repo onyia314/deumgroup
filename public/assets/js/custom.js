@@ -555,17 +555,15 @@
             },
 
             submitHandler: function(form) {
-
+                $('#send').attr({ 'disabled': 'true'}).text('Sending...');
                 var $contactForm = $('#form-url').val()  + '/send-contact-form/' + $('#name').val() + '/' +  $('#email').val() + '/' + $('#subject').val() + '/' + $('#message').val();
-
-                $('#send').attr({ 'disabled': 'true', 'value': 'Sending...' });
                 $.ajax({
                     type: "GET",
                     url: $contactForm,
                     data: $(form).serialize(),
                     success: function(data) {
                         if(data.message == 'OK'){
-                            $('#send').removeAttr('disabled').attr('value', 'Send');
+                            $('#send').removeAttr('disabled').text('Send Message');
                             $("#success").removeClass('d-none').slideDown("slow");
                             setTimeout(function() {
                                 $("#success").slideUp("slow");
@@ -574,7 +572,7 @@
                         }
 
                         if(data.message == 'validationError'){
-                            $('#send').removeAttr('disabled').attr('value', 'Send');
+                            $('#send').removeAttr('disabled').text('Send Message');
                             let errors = []
                             for(let prop in data.errors){
                                 data.errors[prop].forEach(error => {
@@ -592,7 +590,7 @@
                     },
                     error: function(data) {
                         console.log(data);
-                        $('#send').removeAttr('disabled').attr('value', 'Send');
+                        $('#send').removeAttr('disabled').text('Send Message');
                         $("#error").removeClass('d-none').slideDown("slow");
                         setTimeout(function() {
                             $("#error").slideUp("slow");
