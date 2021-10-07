@@ -107,7 +107,7 @@
         @yield('content')
     
         <!--============== Subscribe Section Start ==============-->
-        <div class="full-row bg-gray p-0">
+        {{-- <div class="full-row bg-gray p-0">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!--============== Subscribe Section End ==============-->
 
         <!--============== Footer Section Start ==============-->
