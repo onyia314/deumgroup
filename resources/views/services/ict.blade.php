@@ -46,6 +46,7 @@ Printing Services, Graphics Designing, Telecom Services & sales of Telecommunica
     <div class="full-row bg-white service-details">
         <div class="container">
             <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col mb-3"> <img src="/assets/images/services/ict.jpg" alt=""> </div>
                 <div class="col">
                     <div class="service-text">
                         <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4">About Deum ICT</h3>
@@ -63,7 +64,6 @@ Printing Services, Graphics Designing, Telecom Services & sales of Telecommunica
                         </p>
                     </div>
                 </div>
-                <div class="col"> <img src="/assets/images/services/ict.jpg" alt=""> </div>
             </div>
         </div>
     </div>

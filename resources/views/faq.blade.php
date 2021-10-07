@@ -18,7 +18,7 @@
 @section('content')
 
         <!--============== FAQ Section Start ==============-->
-        <div class="full-row bg-white" style="padding-top:30px;">
+        <div class="full-row bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
