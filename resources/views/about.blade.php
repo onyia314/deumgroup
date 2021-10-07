@@ -47,19 +47,24 @@ We are Deum">
                     <div class="col">
                         <h3 class="double-down-line-left text-secondary position-relative pb-4 mb-4">About Our Company</h3>
                     </div>
+
+                    <div class="about-content">
+                        <p>Deum Group of Companies is an Establishement Comprising of three major companies: Deum Engineering Ltd, Deum Real Estate LTD, Deum Communications and Technology Ltd.
+                            We are interested in Delivering Services to our Clients taste. These services ranges from Engineering to Real Estate and ICT.
+                            Our reliability and consecutive awesome performance gets us a lot of repeat jobs as we treat all Clients equally.
+                            Our integrity keeps us in Business.
+                            We are Deum
+                        </p>
+                    </div>
                 </div>
+
                 <div class="row about-company">
+
+                    <div class="col-lg-5 mb-3" data-aos="zoom-in">
+                        <div class="about-img"> <img src="/assets/images/about/ceo.jpeg" alt=""> </div>
+                    </div>
+
                     <div class="col-lg-7">
-                        <div class="about-content">
-                            <p>Deum Group of Companies is an Establishement Comprising of three major companies: Deum Engineering Ltd, Deum Real Estate LTD, Deum Communications and Technology Ltd.
-                                We are interested in Delivering Services to our Clients taste. These services ranges from Engineering to Real Estate and ICT.
-                            </p>
-                            <p>
-                                Our reliability and consecutive awesome performance gets us a lot of repeat jobs as we treat all Clients equally.
-                                Our integrity keeps us in Business.
-                                We are Deum
-                            </p>
-                        </div>
                         
                         <div class="about-content">
 
@@ -85,9 +90,6 @@ We are Deum">
                         
                     </div>
 
-                    <div class="col-lg-5">
-                        <div class="about-img"> <img src="/assets/images/about/ceo.jpeg" alt=""> </div>
-                    </div>
                 </div>
             </div>
         </div>
