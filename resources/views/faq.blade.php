@@ -16,18 +16,18 @@
 @endpush
 
 @section('content')
+
         <!--============== Banner Section Start ==============-->
-        <div class="page-banner full-row bg-gray py-5">
+        <div class="page-banner full-row bg-gray py-2">
             <div class="container">
                 <div class="row row-cols-md-2 row-cols-1 g-3">
                     <div class="col">
-                        <h3 class="page-name text-secondary m-0">Faq</h3>
+                        <h3 class="page-name text-secondary m-0">FAQ</h3>
                     </div>
                     <div class="col">
                         <nav class="float-start float-md-end">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="index-1.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
                                 <li class="breadcrumb-item active">Faq</li>
                             </ol>
                         </nav>
@@ -37,146 +37,129 @@
         </div>
         <!--============== Banner Section End ==============-->
 
-
         <!--============== FAQ Section Start ==============-->
         <div class="full-row bg-white py-80">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="navigation_link_widget mb-5 bg-gray p-4">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">FAQ’s Category</h4>
-                            <ul>
-                                <li> <a href="#">Service Conpatibility</a> </li>
-                                <li> <a href="#">Property Installation</a> </li>
-                                <li> <a href="award.html">Payment System</a> </li>
-                                <li class="active"> <a href="faq.html">Trustable Broker</a> </li>
-                                <li> <a href="testimonial.html">Commertial Property</a> </li>
-                                <li> <a href="testimonial.html">Tax and Fees</a> </li>
-                                <li> <a href="testimonial.html">Support</a> </li>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Realestate</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Engineering</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">ICT</button>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-9">
+
+
+                    <div class="col-lg-8">
                         <div class="info-pages bg-gray px-4 py-5">
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How To Gete Appoinment ?</h5>
-                                    <p>Non pede ultricies auctor venenatis torquent dapibus ultricies purus platea mauris. Ridiculus neque mauris eleifend in euismod gravida blandit. Condimentum quisque, fermentum condimentum ipsum, justo auctor taciti massa.
-                                        Tristique pretium eleifend. Elit donec nullam dui Tellus sem cras consequat non maecenas nisi potenti vehicula integer penatibus ante ullamcorper. Pretium curabitur.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Is Deum Real Estate a registered company?</h5>
+                                            <p>
+                                                Deum Real Estate Ltd is a real estate Marketing, 
+                                                Development and Investment Company
+                                                incorporated under the COMPANIES AND ALLIDE MATTERS ACT
+                                                1990 with RC No 1741785. 
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Why should I trust lands from Deum Real Estate?</h5>
+                                            <p>
+                                                All lands are registered with the
+                                                Housing Development Corporation
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Can I pay in installments for lands?</h5>
+                                            <p>
+                                                Check the details concerning each Estate for 
+                                                sale to see installment payment is one of the
+                                                options available as the Packages may vary.
+                                                You can contact us to clarify you more on each package. 
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">What scale of Project can Deum Engineering carryout?</h5>
+                                            <p>
+                                                Deum Engineering can and has carried out major construction 
+                                                works which includes residential Building,
+                                                 Schools, Offices, Renovation, Road construction, Water projects etc. 
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Which Engineering Departments do you accept contracts from?</h5>
+                                            <p>
+                                                Civil Engineering, Electrical and Electronics Engineering, 
+                                                other Engineering fields and General Engineering Consultancy.
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">What experience does Deum Engineering have with handling Large Scale projects</h5>
+                                            <p>
+                                                We have worked with numerous Private and Government Establishments providing 
+                                                High quality Projects delivered at the adequate time
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Do Deum Engineering carry out Constructions to the Nigerian Standards for Engineering Constructions?</h5>
+                                            <p>
+                                                Deum Engineering has Engineers licensed by COREN that ensure that all Construction works 
+                                                are carried out to Nigerian Engineering specifications. 
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
+                                        <div class="d-table">
+                                            <h5 class="mb-2 text-secondary">Is Deum Engineering licensed to carryout Engineering practices in Nigeria</h5>
+                                            <p>
+                                                Deum Engineering Consultancy Limited is a leading name in 
+                                                Engineering Consultancy in Nigeria incorporated
+                                                under the COMPANIES AND ALLIDE MATTERS ACT 1990 with RC No 119230 in PURSUANT TO SECTION 659. 
+                                            </p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Not available yet</div>
                             </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How to provide the property ?</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">What is legality and trust of your company ?</h5>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of
-                                        the truth, the master-builder of human happiness.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How can sale my property ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How can buy a good property ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">What is the payment process ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">Who take the responsibility, if can’t sale my property ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How can I get rent a house ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">What is the oppertunity to build my career in this company ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How can I get good person for rent my house ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">About the safty of buying property ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <div class="faq-item mb-4"> <span class="faq-question bg-primary text-white">Q</span>
-                                <div class="d-table">
-                                    <h5 class="mb-2 text-secondary">How the ability of customize property ?</h5>
-                                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li
-                                        plu commun vocabules.</p>
-                                    <hr>
-                                    <aside class="float-start">Was this answer helpful?<a class="text-primary ms-2" href="#">Yes</a><a class="text-primary ms-2" href="#">No</a></aside>
-                                    <a class="float-sm-end text-primary" href="#">Contact Us</a> </div>
-                            </div>
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center mt-5 white">
-                                    <li class="page-item disabled"> <span class="page-link">Previous</span> </li>
-                                    <li class="page-item active" aria-current="page"> <span class="page-link"> 1 <span class="sr-only">(current)</span> </span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">...</li>
-                                    <li class="page-item"><a class="page-link" href="#">45</a></li>
-                                    <li class="page-item"> <a class="page-link" href="#">Next</a> </li>
-                                </ul>
-                            </nav>
+                            
                         </div>
                     </div>
                 </div>

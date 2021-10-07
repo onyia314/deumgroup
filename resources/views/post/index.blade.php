@@ -16,7 +16,7 @@
 @section('content')
 
     <!--============== Banner Section Start ==============-->
-    {{-- <div class="page-banner full-row bg-gray py-5">
+    <div class="page-banner full-row bg-gray py-2">
         <div class="container">
             <div class="row row-cols-md-2 row-cols-1 g-3">
                 <div class="col">
@@ -25,14 +25,14 @@
                 <div class="col">
                     <nav class="float-start float-md-end">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="index-1.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
                             <li class="breadcrumb-item active">Blog</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!--============== Banner Section End ==============-->
 
     <!--============== Blog & Sidebar Section Start ==============-->

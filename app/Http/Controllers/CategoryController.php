@@ -22,7 +22,7 @@ class CategoryController extends Controller
 
     public function categoryPosts($category_id)
     {
-        $categories = Category::all();
+        $categories = Category::has('posts')->get();
         $posts = Post::whereHas('categories' , function($cat) use($category_id){
             $cat->where('categories.id' , $category_id);
         })->paginate(10);

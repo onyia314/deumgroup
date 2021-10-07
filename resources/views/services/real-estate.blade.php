@@ -21,7 +21,7 @@ We exist to serve our clients." >
 @section('content')
     
     <!--============== Banner Section Start ==============-->
-    <div class="page-banner full-row bg-gray py-5">
+    <div class="page-banner full-row bg-gray py-2">
         <div class="container">
             <div class="row row-cols-md-2 row-cols-1 g-3">
                 <div class="col">
@@ -30,7 +30,7 @@ We exist to serve our clients." >
                 <div class="col">
                     <nav class="float-start float-md-end">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                            <li class="breadcrumb-item"><a>Services</a></li>
                             <li class="breadcrumb-item active">Real Estate</li>
                         </ol>
                     </nav>

@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at' , 'desc')->paginate(6);
-        $categories = Category::all();
+        $categories = Category::has('posts')->get();
         $lands = Land::orderBy('created_at' , 'desc')->paginate(6);
         return view('post.index' , ['posts' => $posts , 'categories' => $categories , 'lands' => $lands]);
     }

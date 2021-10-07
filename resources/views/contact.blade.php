@@ -28,7 +28,7 @@
                     <div class="col">
                         <nav class="float-start float-md-end">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="index-1.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
                                 <li class="breadcrumb-item active">Contact</li>
                             </ol>
                         </nav>
