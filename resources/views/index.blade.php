@@ -170,7 +170,7 @@
                                                         <ul>
                                                             <li><span>{{$land->area}}</span></li>
                                                             <li><span>{{$land->price}}</span></li>
-                                                            <li><span><a href="{{route('lands.show' , $land->id)}}">+ Read More</a></span></li>
+                                                            <li><span><a class="mt-3 btn bg-primary text-white" href="{{route('lands.show' , $land->id)}}">+ Read More</a></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -209,7 +209,7 @@
                                         <p>
                                             {{Str::words($project->content , 30)}}
                                         </p>
-                                        <a class="mt-3 text-primary hover-text-secondary" href="{{route('projects.show' , $project->id)}}">Read More</a>
+                                        <a class="mt-3 btn bg-primary text-white" href="{{route('projects.show' , $project->id)}}">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@
                                         <p>
                                             {{Str::words($post->content , 30)}}
                                         </p>
-                                        <a class="mt-3 text-primary hover-text-secondary" href="{{route('posts.show' , $post->slug)}}">Read More</a>
+                                        <a class="mt-3 btn bg-primary text-white" href="{{route('posts.show' , $post->slug)}}">Read More</a>
                                     </div>
                                 </div>
                             </div>
