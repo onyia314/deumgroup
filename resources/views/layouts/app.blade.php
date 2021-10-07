@@ -185,7 +185,7 @@ Contact us today and let us worry about getting your job done.
                                             <div class="footer-widget media-widget mt-4 text-secondary hover-text-primary">
                                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <i class="icon ion-social-whatsapp-outline"></i>.
+                                                <i class="icon ion-social-whatsapp-outline"></i>
                                                 <a href="https://wa.me/+2347016864250"><i class="fab fa-whatsapp"></i></a>
                                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                             </div>

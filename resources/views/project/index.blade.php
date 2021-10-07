@@ -55,7 +55,7 @@
                                     <p>
                                         {{Str::words($project->content , 30)}}
                                     </p>
-                                    <a class="mt-3 text-primary hover-text-secondary" href="{{route('projects.show' , $project->id)}}">Read More</a>
+                                    <a class="mt-3 btn bg-primary text-white" href="{{route('projects.show' , $project->id)}}">Read More</a>
                                 </div>
                             </div>
                         </div>

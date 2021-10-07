@@ -27,7 +27,7 @@
                     <nav class="float-start float-md-end">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('lands.index')}}">Lands</a></li>
+                            <li class="breadcrumb-item active"><a>Lands</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -80,7 +80,7 @@
                                                         <ul>
                                                             <li><span>{{$land->area}}</span></li>
                                                             <li><span>{{$land->price}}</span></li>
-                                                            <li><span><a href="{{route('lands.show' , $land->id)}}">+ Read More</a></span></li>
+                                                            <li><span><a class = "btn bg-primary text-white" href="{{route('lands.show' , $land->id)}}">+ Read More</a></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>

@@ -52,13 +52,13 @@
                                     <div class="date text-white position-absolute z-index-9">{{$post->title}}</div>
                                 </div>
                                 <div class="p-4">
-                                    <h6 class="text-secondary hover-text-primary mb-4"><a href="blog-details.html">{{Str::words($post->content , 5)}}</a></h6>
+                                    <h6 class="text-secondary hover-text-primary mb-4"><a href="{{route('posts.show' , $post->slug)}}">{{Str::words($post->content , 30)}}</a></h6>
                                     <p>
                                         @foreach ($post->categories as $category)
-                                            <span>{{$category->name}}</span>
+                                            <span> <a class="text-primary hover-text-secondary" href="{{route('category.posts' , $category->id)}}">{{$category->name}} | </a></span>
                                         @endforeach
                                     </p>
-                                    <a class="mt-3 text-primary hover-text-secondary" href="{{route('posts.show' , $post->slug)}}">Read More</a> 
+                                    <a class="mt-3 btn bg-primary text-white" href="{{route('posts.show' , $post->slug)}}">Read More</a> 
                                 </div>
                             </div>
                         </div>
