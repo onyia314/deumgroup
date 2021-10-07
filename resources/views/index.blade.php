@@ -272,7 +272,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="living-list pe-4">
-                            <h3 class="pb-4 mb-3 text-white">Make life for happy living</h3>
+                            <h3 class="pb-4 mb-3 text-white">Services At Its Best</h3>
                             <ul>
                                 <li class="mb-4 text-white d-flex">
                                     <i class="flaticon-real-estate flat-medium float-start d-table me-4 text-primary" aria-hidden="true"></i>
