@@ -88,7 +88,7 @@
                         <span class="text-center mt-3 d-block mb-3">Real Estate , Engineering and ICT</span> </div>
                 </div>
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
-                    <div class="col">
+                    <div class="col" data-aos="flip-left">
                         <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
                              <i class="flaticon-real-estate flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.real-estate')}}">REAL ESTATE</a></h5>
@@ -98,7 +98,7 @@
                             </p>
                             <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.real-estate')}}">Learn More</a> </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="zoom-in" >
                         <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s">
                              <i class="flaticon-diagram flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.engineering')}}">ENGINEERING</a></h5>
@@ -109,7 +109,7 @@
                             </p>
                             <a class="text-primary hover-text-secondary mt-4 d-table mx-auto" href="{{route('services.engineering')}}">Learn More</a> </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="flip-right">
                         <div class="py-4 px-4 text-center hover-bg-white hover-shadow rounded transation-3s"> 
                             <i class="flaticon-code-signs flat-medium icon-primary" aria-hidden="true"></i>
                             <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="{{route('services.ict')}}">ICT</a></h5>
@@ -152,7 +152,7 @@
                                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
 
                                     @foreach ($lands as $land)
-                                        <div class="col">
+                                        <div class="col" data-aos="flip-up">
                                             <div class="featured-thumb hover-zoomer">
                                                 <div class="overflow-hidden position-relative"> 
                                                     <img src="{{'/uploads' . '/' .$land->image_path}}" alt="">
@@ -199,7 +199,7 @@
                 </div>
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
                         @foreach ($projects as $project)
-                            <div class="col">
+                            <div class="col" data-aos="zoom-in">
                                 <div class="hover-zoomer thumb-two shadow-one">
                                     <div class="overlay-black overflow-hidden position-relative"> <img src="{{'/uploads' .'/' .$project->image_path}}" alt="image">
                                         <div class="date text-white position-absolute z-index-9">{{$project->created_at->format('d/m/Y')}}</div>

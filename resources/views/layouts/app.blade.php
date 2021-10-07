@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/color.css" id="color-change">
     <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/aos/aos.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
     <!--TiNYMCE for text editor -->
@@ -183,11 +184,10 @@ Contact us today and let us worry about getting your job done.
                                                 </ul>
                                         </div>
                                             <div class="footer-widget media-widget mt-4 text-secondary hover-text-primary">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <i class="icon ion-social-whatsapp-outline"></i>
+                                                <a href="https://www.facebook.com/deumrealestate/"><i class="fab fa-facebook-f"></i></a>
+                                                {{-- <a href="#"><i class="fab fa-twitter"></i></a> --}}
                                                 <a href="https://wa.me/+2347016864250"><i class="fab fa-whatsapp"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.instagram.com/invites/contact/?i=1mz4du44w05eg&utm_content=m5516hr"><i class="fab fa-instagram"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -245,6 +245,7 @@ Contact us today and let us worry about getting your job done.
     <script src="/assets/js/YouTubePopUp.jquery.js"></script>
     <script src="/assets/js/validate.js"></script>
     <script src="/assets/js/jquery.cookie.js"></script>
+    <script src="/assets/js/aos/aos.js"></script>
     <script src="/assets/js/custom.js"></script>
 
     @stack('script')

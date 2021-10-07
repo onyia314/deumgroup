@@ -2,6 +2,10 @@
 
     'use strict'
 
+    //initialise aos
+    AOS.init();
+
+    
     /* var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
