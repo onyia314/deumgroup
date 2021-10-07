@@ -17,28 +17,8 @@
 
 @section('content')
 
-        <!--============== Banner Section Start ==============-->
-        <div class="page-banner full-row bg-gray py-2">
-            <div class="container">
-                <div class="row row-cols-md-2 row-cols-1 g-3">
-                    <div class="col">
-                        <h3 class="page-name text-secondary m-0">FAQ</h3>
-                    </div>
-                    <div class="col">
-                        <nav class="float-start float-md-end">
-                            <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
-                                <li class="breadcrumb-item active">Faq</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--============== Banner Section End ==============-->
-
         <!--============== FAQ Section Start ==============-->
-        <div class="full-row bg-white py-80">
+        <div class="full-row bg-white" style="padding-top:30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
